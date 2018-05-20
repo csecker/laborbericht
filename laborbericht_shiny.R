@@ -7,7 +7,7 @@ library(ggplot2)
 library(scales)
 
 # lädt das Laborfile (müssen wir noch in Github laden und verlinken)
-labor = read.csv(file = "C:/Users/Xenia/Documents/laborbericht/labor.csv", header =
+labor = read.csv(file = "https://github.com/dr-xenia/laborbericht/blob/master/labor.csv", header =
                          TRUE, sep = ",")
 
 # richtige Formattierung des Datums
