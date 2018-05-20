@@ -5,7 +5,6 @@ library(shiny)
 library(shinythemes)
 library(ggplot2)
 library(scales)
-library(readr)
 
 # lädt das Laborfile 
 labor = read.csv(file = "https://raw.githubusercontent.com/dr-xenia/laborbericht/master/labor.csv", header =
