@@ -17,14 +17,14 @@ grenzwertUnter <- function(param, untereGrenze) {
 }
 
 # Funktionen ploetzliche Veraenderung
-# hier muessten die Werte ueber die Zeit also array gespeichert sein.
+# Sind die Laborparameter in einem eindimensionalen Array ueber die Zeit, sodass sie wir hier angesteuert werden koennten?
 
 # Funtion schneller Anstieg 
 
 schnellAnstieg <- function(param, anstiegGrenze) {
   for(i in 0:length(param)) {
     if(param[i+1] - param[i] > anstiegGrenze) { 
-      return cat('Achtung! ', param, 'ploetzlich angestiegen.')
+      return cat('Achtung! ', param, 'ploetzlich angestiegen.', sep='')
     }
   }
 }
@@ -34,7 +34,7 @@ schnellAnstieg <- function(param, anstiegGrenze) {
 schnellAbfall <- function(param, abfallGrenze) {
   for(i in 0:length(param)) {
     if(param[i+1] - param[i] < anstiegGrenze) {
-      return cat('Achtung! ', param, 'ploetzlich abgefallen.')
+      return cat('Achtung! ', param, 'ploetzlich abgefallen.', sep='')
     }
   }
 }
